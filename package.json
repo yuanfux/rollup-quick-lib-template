@@ -2,10 +2,14 @@
   "name": "rollup-quick-lib-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/example-lib.js",
+  "umd:main": "dist/example-lib.umd.js",
+  "module": "dist/example-lib.m.js",
+  "source": "src/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/rollup -c",
-    "watch": "./node_modules/.bin/rollup -c -w"
+    "build": "npm run clean && NODE_ENV=production ./node_modules/.bin/rollup -c",
+    "dev": "NODE_ENV=development ./node_modules/.bin/rollup -c -w",
+    "clean": "rm -rf dist/*"
   },
   "repository": {
     "type": "git",
