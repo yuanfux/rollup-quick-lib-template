@@ -11,16 +11,19 @@ export default {
   output: [
   	{ 
   		file: pkg['main'],
-  		format: 'cjs'
+  		format: 'cjs',
+  		sourcemap: isDev ? true : false
   	},
   	{ 
   		file: pkg['module'],
-  		format: 'esm'
+  		format: 'esm',
+  		sourcemap: isDev ? true : false
   	},
   	{ 
   		file: pkg['umd:main'],
   		format: 'umd',
-  		name: basename(pkg['umd:main']).replace(/\.umd\.js$/, '')
+  		name: basename(pkg['umd:main']).replace(/\.umd\.js$/, ''),
+  		sourcemap: isDev ? true : false
   	}
   ],
   plugins: [
@@ -28,9 +31,7 @@ export default {
     babel({
       exclude: 'node_modules/**' // only transpile our source code
     }),
-    uglify({
-    	sourceMap: isDev ? true : false
-    })
+    uglify()
   ],
   watch: {
   	exclude: 'node_modules/**'
