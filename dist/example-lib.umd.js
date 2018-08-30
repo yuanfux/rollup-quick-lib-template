@@ -1,1 +1,2 @@
 !function(e,n){"object"==typeof exports&&"undefined"!=typeof module?n():"function"==typeof define&&define.amd?define(n):n()}(0,function(){"use strict";var e=!0,n=!1,t=void 0;try{for(var o,r="😀😀"[Symbol.iterator]();!(e=(o=r.next()).done);e=!0){var f=o.value;console.log(f)}}catch(e){n=!0,t=e}finally{try{e||null==r.return||r.return()}finally{if(n)throw t}}});
+//# sourceMappingURL=example-lib.umd.js.map

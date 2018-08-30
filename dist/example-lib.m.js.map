@@ -1,0 +1,1 @@
+{"version":3,"file":"example-lib.m.js","sources":["../src/index.js"],"sourcesContent":["const arr = '😀😀';\n\nfor (const i of arr) {\n\tconsole.log(i);\n}\n"],"names":["arr","i","console","log"],"mappings":"AAAA,IAAMA,IAAM,2GAEIA,+GAAK,KAAVC,cACVC,QAAQC,IAAIF"}

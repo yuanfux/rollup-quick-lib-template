@@ -1,0 +1,1 @@
+{"version":3,"file":"example-lib.umd.js","sources":["../src/index.js"],"sourcesContent":["const arr = '😀😀';\n\nfor (const i of arr) {\n\tconsole.log(i);\n}\n"],"names":["i","console","log"],"mappings":"uJAAA,uCAAY,sDAES,KAAVA,UACVC,QAAQC,IAAIF"}
